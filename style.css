@@ -97,6 +97,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: #007d7b;
+}
+
 a:focus {
     border: 1px white;
 }
@@ -188,22 +192,22 @@ input[type=submit]{
 }
 
 #chile, #hawaii, #moab {
-    bottom: 10px;
+    bottom: 15px;
     color: white;
 }
 
 #guatemala, #wyoming {
-    top: 10px;
+    top: 15px;
     color: white;
 }
 
 #iran, #ireland, #rocky, #swiss, #uk, #usa {
-    top: 10px;
+    top: 15px;
     color: black;
 }
 
 #italy {
-    bottom: 10px;
+    bottom: 15px;
     color: black;
 }
 
