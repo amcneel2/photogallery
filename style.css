@@ -74,6 +74,7 @@ h2 {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    padding: 10px;
 }
 
 nav {
@@ -85,6 +86,7 @@ nav {
 nav li {
     list-style: none;
     display: inline;
+    padding: 10px;
 }
 
 nav a {
@@ -95,6 +97,10 @@ nav a {
     text-decoration: none;
 }
 
+a:focus {
+    border: 1px white;
+}
+
 p {
     font-size: 1.25em;
     line-height: 1.25em;
@@ -102,12 +108,14 @@ p {
 
 figcaption, label, input, small {
     font-size: 1em;
+    text-transform: uppercase;
 }
 
 footer {
     text-align: center;
     color: white;
-    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 #contact, footer {
@@ -125,36 +133,152 @@ footer {
 }
 
 form {
-    width: 300px;
-    margin: auto;
-    padding: 20px;
+    width: 100%;
 }
 
 input, label {
     display: block;
-    width: 100%;
-    text-transform: uppercase;
+    width: 75%;
     font-weight: bold;
     color: #007d7b;
+    padding: 5px;
+    margin: auto;
 }
 
 input {
     margin-bottom: 20px;
-    padding: 10px;;
+    padding: 10px;
 }
 
 input[type=submit]{
+    width: 50%;
 	background-color: #007d7b;
 	border-radius: 15px;
 	color: white;
+    margin: 0 auto;
 }
+
+#about {
+    margin: 10px;
+}
+
+#gallery {
+    margin: 10px;
+}
+
+#contact {
+    padding: 10px;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1FR;
+    gap: 10px;
+    margin: 20px;
+}
+
+.photo {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+#chile, #hawaii, #moab {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+}
+
+#guatemala, #wyoming {
+    position: absolute;
+    top: 10px;
+    color: white;
+}
+
+#iran, #ireland, #rocky, #swiss, #uk, #usa {
+    position: absolute;
+    top: 10px;
+    color: black;
+}
+
+#italy {
+    position: absolute;
+    bottom: 10px;
+    color: black;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+@media screen and (min-width:880px) {
+    body {
+        width: 880px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    #about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #gallery h2 {
+        padding-bottom: 20px;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1FR 1FR;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body {
+        width: 1300px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #gallery h2 {
+        padding-bottom: 20px;
+    }
+
+    #grid {
+        display: grid;
+        grid-template-columns: 1FR 1FR 1FR ;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+
 
 /* 
 TO DO
-center images
-spacing between sections
-spacing between nav a
-desc on top of images
+center figcaptions
 media screens
 */
 
