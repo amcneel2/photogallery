@@ -77,6 +77,22 @@ h2 {
     padding: 10px;
 }
 
+legend {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+nav h2 {
+    display: none;
+}
+
+fieldset h2 {
+    display: none;
+}
+
 nav {
     background-color: black;
     padding: 40px;
@@ -110,6 +126,10 @@ p {
     line-height: 1.25em;
 }
 
+.hi {
+    padding-bottom: 15px;
+}
+
 figcaption, label, input, small {
     font-size: 1em;
     text-transform: uppercase;
@@ -126,7 +146,7 @@ footer {
     background-color: black;
 }
 
-#contact h2, #contact p {
+legend, #contact p {
     color: white
 }
 
